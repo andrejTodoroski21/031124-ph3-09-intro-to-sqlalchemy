@@ -11,8 +11,15 @@ metadata = MetaData(naming_convention={
 # this sets up the database connection
 db = SQLAlchemy(metadata=metadata)
 
-class Hamburger(???):
-    pass
+# class Hamburger(db.Model):
+#     __tablename__ = "delis_table"
+#     id = db.Column(db.Integer, primary_key=True)
+#     address = db.Column(db.string)
+#     name = db.Column(db.string)
 
-class Deli(???):
-    pass
+
+class Deli(db.Model):
+    __tablename__ = "delis_table"
+    id = db.Column(db.Integer, primary_key=True)
+    address = db.Column(db.String)
+    name = db.Column(db.String)

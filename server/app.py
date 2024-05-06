@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-from flask import Flask, request, jsonify, make_request
+from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
-from models import db, Deli, Hamburger
+from models import db, Deli
 
 # this is our flask application!
 app = Flask(__name__)
